@@ -1,4 +1,3 @@
-```
 # ✈️ Sistema de Gerenciamento de Viagens Corporativas – Desafio Onfly
 
 Este projeto é uma aplicação Full Stack desenvolvida como parte do processo seletivo da Onfly. Ele permite que usuários cadastrem e gerenciem pedidos de viagem corporativa. A aplicação é composta por uma API em Laravel (backend) e uma interface em Vue.js (frontend), com ambiente de execução configurado via Docker utilizando Laradock.
