@@ -1,0 +1,22 @@
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.button-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+input {
+  padding: 0.5em;
+  color: var(--color-background);
+  border-radius: 4px;
+  border: none;
+  background-color: var(--color-text);
+}
+
+input:focus {
+  outline: none;
+}

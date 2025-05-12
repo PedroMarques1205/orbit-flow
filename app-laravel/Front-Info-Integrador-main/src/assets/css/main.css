@@ -1,0 +1,13 @@
+@import './variables.css';
+@import './base.css';
+@import './buttons.css';
+
+label,
+span,
+div {
+  font-weight: bold;
+}
+
+h1 {
+  color: var(--color-heading);
+}
