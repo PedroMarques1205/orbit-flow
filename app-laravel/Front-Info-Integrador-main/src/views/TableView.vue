@@ -22,6 +22,15 @@ const dataIda = ref('')
 const dataVolta = ref('')
 const emailSolicitante = ref('')
 
+function formatarData(data: string): string {
+  const dataObj = new Date(data)
+  return dataObj.toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  })
+}
+
 function enviarNovaViagem() {
   const novaViagem = {
     destino: destino.value,
@@ -184,8 +193,8 @@ onMounted(() => {
                     <tr v-for="viagem in viagensPaginadas" :key="viagem.id">
                     <td>{{ viagem.nome_solicitante }}</td>
                     <td>{{ viagem.destino }}</td>
-                    <td>{{ viagem.data_ida }}</td>
-                    <td>{{ viagem.data_volta }}</td>
+                    <td>{{ formatarData(viagem.data_ida) }}</td>
+                    <td>{{ formatarData(viagem.data_volta) }}</td>
                     <td>
                         <span
                         :class="[
